@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SSC vocational result 2024</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="./imgs/logo.png" alt="logo">
+    <h1>কারিগরি SSC রেজাল্ট পোর্টাল</h1>
+  </header>
+
+  <nav>
+    <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+    <ul id="navList">
+      <li><a id="nav1" onclick="navigate('home')">Home</a></li>
+      <li><a id="nav2" onclick="navigate('result')">Result</a></li>
+      <li><a id="nav3" onclick="navigate('about')">About us</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="home" class="page">
+      <h2>Welcome</h2>
+      <p>Click on the <span id="colour">Result</span> button to search your result by your board roll.</p>
+      <button id="disclaimer" onclick="showDisclaimer()">Disclaimer</button>
+    </section>
+
+    <section id="result" class="page hidden">
+      <h2>Search</h2>
+      <input type="text" id="rollInput" placeholder="রোল নম্বর লিখুন...">
+      <button onclick="searchResult()">Search</button>
+      <div id="output"></div>
+    </section>
+
+    <section id="about" class="page hidden">
+      <h2>About us</h2>
+      <p>I </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://facebook.com/arafath.rhaman.180583" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://t.me/arafath05f" target="_blank"><i class="fab fa-telegram"></i></a>
+    </p>
+    <p>&copy; 2025 কারিগরি শিক্ষা বোর্ড</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

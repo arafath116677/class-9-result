@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans Bengali', sans-serif;
+    background: #f0f4f8;
+    color: #222;
+}
+
+header {
+    background: #004d99;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background: #0059b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.result-card {
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+footer {
+    background: #004d99;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#logo {
+    height: 100px;
+    margin-right: 20px;
+}
+#nav1:hover, #nav2:hover, #nav3:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+    background-color: white;
+}
+#colour {
+    color: red;
+    font-weight: bold;
+}
+#disclaimer {
+    background-color: red;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#disclaimer:hover {
+    background-color: darkred;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
